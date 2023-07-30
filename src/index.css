@@ -1,13 +1,53 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "rigatoni";
+  /* -webkit-text-stroke: 2px rgb(17 24 39 / var(--tw-text-opacity));
+  color: transparent;
+  position: relative; */
+}
+
+.nostroke {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+/* h1::after {
+  content: "Kudjuh Desmond.";
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+  white-space: nowrap;
+}
+
+:hover::after {
+  animation: movetext 0.5s linear both;
+}
+
+@keyframes movetext {
+  to {
+    width: 100%;
+  }
+} */
